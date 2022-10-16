@@ -41,8 +41,13 @@ class _MyAppState extends State<MyApp> {
           child,
         ) {
           return MaterialApp(
+            appBar: AppBar(
+              title: const Text('Hacktoberfest 22'),
+              backgroundColor: Color(0xFFE0E0E0),
+              debugShowCheckedModeBanner: false,
+            ),
             // Hide the debug banner
-            debugShowCheckedModeBanner: false,
+
             title: '1stHacktoberfest',
             home: HomeView(),
             //home: themeProvider.dTheme ? HomePage(darkMode: true) : HomePage(),
